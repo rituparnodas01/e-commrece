@@ -325,7 +325,7 @@ var addtocart = async (req, res) => {
     // try {
 
 
-    if ((pid === prodid[0].ProductId) && (qty <= prodid[0].Stock)) {
+    if (qty <= prodid[0].Stock) {
         console.log(true);
         var data = await Cart.create({
             qty, UserId: req.userId, ProductId: pid
