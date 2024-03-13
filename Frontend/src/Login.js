@@ -48,6 +48,9 @@ const Login = () => {
                    </Link>
                 </form>
                 <p className="register-link">Don't have an account? <Link to="/register">Register here</Link></p>
+                <Link to="/sellerlogin" >
+                 <button className="seller-register-button">Seller Login </button>
+                </Link>
             </div>
         </Wrapper>
     );
@@ -75,7 +78,18 @@ const Wrapper = styled.section`
     height: 90vh;
     background-color: #f0f2f5; /* Amazon uses a light gray background */
     font-family: 'Roboto', sans-serif; /* Amazon uses Roboto font */
-
+    .seller-register-button{
+        position: absolute;
+    top: 20px;
+    right: 20px;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    }
 
 /* Style for the login container */
 .login-container {

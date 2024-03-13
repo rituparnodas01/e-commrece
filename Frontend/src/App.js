@@ -8,12 +8,13 @@ import SingleProduct from './SingleProduct';
 import Cart from './Cart';
 import { GlobalStyle } from "./GlobalStyle";
 import { ThemeProvider } from "styled-components";
-
+import SellerRegistrationForm from './components/SellerRegistration';
 import Headers from './components/Headers';
 import Contact from './Contact';
 import CheckoutPage from './components/Checkout';
 import Login from './Login';
 import Registration from "./Registration"
+import SellerLoginForm from './components/SellerLogin';
 function App() {
   const theme = {
     colors: {
@@ -57,6 +58,10 @@ function App() {
     <Route path='/cart' element={<Cart/>}/>
     <Route path='/checkout' element={<CheckoutPage/>}/>
     <Route path='/register' element={<Registration/>}/>
+    <Route path='/sellerregister' element={<SellerRegistrationForm/>}/>
+    <Route path='/sellerlogin' element={<SellerLoginForm/>}/>
+    
+    
 
   </Routes>
 </BrowserRouter>

@@ -39,7 +39,7 @@ const Header = () => {
   const location = useLocation();
 
   // Define an array of paths where you want to hide the header
-  const hideHeaderPaths = ['/', '/register'];
+  const hideHeaderPaths = ['/', '/register','/sellerregister','/sellerlogin'];
 
   // Check if the current location's path is included in hideHeaderPaths
   const hideHeader = hideHeaderPaths.includes(location.pathname);
