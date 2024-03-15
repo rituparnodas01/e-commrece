@@ -15,6 +15,7 @@ import CheckoutPage from './components/Checkout';
 import Login from './Login';
 import Registration from "./Registration"
 import SellerLoginForm from './components/SellerLogin';
+import SellerPanel from './components/SellerPanel';
 function App() {
   const theme = {
     colors: {
@@ -60,6 +61,8 @@ function App() {
     <Route path='/register' element={<Registration/>}/>
     <Route path='/sellerregister' element={<SellerRegistrationForm/>}/>
     <Route path='/sellerlogin' element={<SellerLoginForm/>}/>
+    <Route path='/seller' element={<SellerPanel/>}/>
+
     
     
 

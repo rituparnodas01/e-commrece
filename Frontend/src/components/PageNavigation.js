@@ -5,7 +5,7 @@ import styled from "styled-components";
 const PageNavigation = ({ title }) => {
     return (
         <Wrapper>
-            <NavLink exact to="/" activeClassName="active">
+            <NavLink exact to="/home" activeClassName="active">
                 Home
             </NavLink>
             <Separator>/</Separator>

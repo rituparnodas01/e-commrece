@@ -1,4 +1,4 @@
-import React,{useState,useEffect} from "react";
+import React,{useState} from "react";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 import { FiShoppingCart } from "react-icons/fi";
@@ -193,7 +193,7 @@ const Nav = () => {
         <div className={menuIcon ? "navbar active":"navbar"}>
             <ul className="navbar-lists">
             <li>
-                <NavLink to = "/" className="navbar-link home-link"
+                <NavLink to = "/home" className="navbar-link home-link"
                 onClick={()=>setMenuIcon(false)}
                 >
                 Home

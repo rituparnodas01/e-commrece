@@ -3,6 +3,8 @@ import FilterSection from "./components/FilterSection";
 import ProductList from "./components/ProductList";
 import Sort from "./components/Sort";
 import { useFilterContext } from "./context/filter_context";
+import { Button } from "./styles/Button";
+import { Link } from "react-router-dom";
 
 const Products = () => {
   const {filter_products} = useFilterContext();
@@ -23,6 +25,10 @@ const Products = () => {
           </div>
         </section>
       </div>
+      <Link to="/seller">
+        <Button>seller panel</Button>
+      </Link>
+
     </Wrapper>
   );
 };
