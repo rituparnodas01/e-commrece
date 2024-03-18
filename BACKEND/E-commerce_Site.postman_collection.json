@@ -23,7 +23,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\r\n    \"Seller_name\" : \"Seller4\",\r\n    \"Seller_email\" : \"Seller4@seller.flipzon\",\r\n    \"password\" : \"abc123\",\r\n    \"confirmPassword\" : \"abc123\"\r\n}",
+					"raw": "{\r\n    \"Seller_name\" : \"Seller1\",\r\n    \"Seller_email\" : \"Seller1@seller.flipzon\",\r\n    \"password\" : \"abc123\",\r\n    \"confirmPassword\" : \"abc123\"\r\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -101,38 +101,56 @@
 					"mode": "formdata",
 					"formdata": [
 						{
-							"key": "Product_catagory",
+							"key": "category",
 							"value": "Electronics",
 							"contentType": "application/json",
 							"type": "text"
 						},
 						{
-							"key": "Product_name",
+							"key": "name",
 							"value": "iPhone XS MaxProUltra LE",
 							"contentType": "application/json",
 							"type": "text"
 						},
 						{
-							"key": "Product_description",
+							"key": "description",
 							"value": "IOS",
 							"contentType": "application/json",
 							"type": "text"
 						},
 						{
-							"key": "Product_image",
+							"key": "image",
 							"contentType": "image/png",
 							"type": "file",
-							"src": "/C:/Users/CEPL/Downloads/Untitled.jpg"
+							"src": "/C:/Users/CEPL/Downloads/pexels-julissa-helmuth-4872604.jpg"
 						},
 						{
-							"key": "Stock",
+							"key": "stock",
 							"value": "100",
 							"contentType": "application/json",
 							"type": "text"
 						},
 						{
-							"key": "Price",
+							"key": "price",
 							"value": "999999",
+							"contentType": "application/json",
+							"type": "text"
+						},
+						{
+							"key": "colors",
+							"value": "Red",
+							"contentType": "application/json",
+							"type": "text"
+						},
+						{
+							"key": "company",
+							"value": "Ramson",
+							"contentType": "application/json",
+							"type": "text"
+						},
+						{
+							"key": "featured",
+							"value": "true",
 							"contentType": "application/json",
 							"type": "text"
 						}
@@ -171,38 +189,56 @@
 					"mode": "formdata",
 					"formdata": [
 						{
-							"key": "Product_catagory",
+							"key": "category",
 							"value": "Electronics",
 							"contentType": "application/json",
 							"type": "text"
 						},
 						{
-							"key": "Product_name",
-							"value": "iPhone 15 ProMaxUltra LE",
+							"key": "name",
+							"value": "iPhone XS MaxProUltra LE",
 							"contentType": "application/json",
 							"type": "text"
 						},
 						{
-							"key": "Product_description",
+							"key": "description",
 							"value": "android",
 							"contentType": "application/json",
 							"type": "text"
 						},
 						{
-							"key": "Product_image",
+							"key": "image",
 							"contentType": "image/png",
 							"type": "file",
-							"src": "/C:/Users/CEPL/Downloads/pexels-max-andrey-1366630.jpg"
+							"src": "/C:/Users/CEPL/Downloads/Untitled.jpg"
 						},
 						{
-							"key": "Stock",
-							"value": "10",
+							"key": "stock",
+							"value": "100",
 							"contentType": "application/json",
 							"type": "text"
 						},
 						{
-							"key": "Price",
-							"value": "99999",
+							"key": "price",
+							"value": "999999",
+							"contentType": "application/json",
+							"type": "text"
+						},
+						{
+							"key": "colors",
+							"value": "Red",
+							"contentType": "application/json",
+							"type": "text"
+						},
+						{
+							"key": "company",
+							"value": "Ramson",
+							"contentType": "application/json",
+							"type": "text"
+						},
+						{
+							"key": "featured",
+							"value": "true",
 							"contentType": "application/json",
 							"type": "text"
 						}
