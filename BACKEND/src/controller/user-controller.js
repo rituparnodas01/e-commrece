@@ -105,11 +105,11 @@ var loginSeller = async (req, res) => {
 var addproducts = async (req, res) => {
     try {
 
-        const { Product_catagory, Product_name, Product_description, Stock, Price } = req.body;
-        const Product_image = req.file.filename;
+        const { category,colors,company,featured,name,description,stock,price } = req.body;
+        const image = req.file.filename;
 
         var data = await Product.create({
-            Product_catagory, Product_name, Product_description, Product_image, Stock, Price, SellerId: req.sellerId
+            category,colors,company,featured,name,description,stock,price,image, SellerId: req.sellerId
         })
 
         res.status(200).json({ data });
@@ -127,23 +127,23 @@ var editproducts = async (req, res) => {
     try {
 
         const { pid } = req.params
-        const { Product_catagory, Product_name, Product_description, Stock, Price } = req.body;
-        const Product_image = req.file ? req.file.filename : null;
+        const { category,colors,company,featured,name,description,stock,price } = req.body;
+        const image = req.file ? req.file.filename : null;
 
         if (req.selleremail == "admin@admin.flipzon") {
             var data = await Product.update({
-                Product_catagory, Product_name, Product_description, Product_image, Stock, Price, SellerId: req.sellerId
+                category,colors,company,featured,name,description,stock,price,image, SellerId: req.sellerId
             }, {
                 where: {
-                    ProductId: pid
+                    id: pid
                 }
             })
         } else {
             var data = await Product.update({
-                Product_catagory, Product_name, Product_description, Product_image, Stock, Price, SellerId: req.sellerId
+                category,colors,company,featured,name,description,stock,price,image, SellerId: req.sellerId
             }, {
                 where: {
-                    ProductId: pid,
+                    id: pid,
                     SellerId: req.sellerId
                 }
             })
@@ -174,7 +174,7 @@ var deleteproducts = async (req, res) => {
         } else {
             var data = await Product.destroy({
                 where: {
-                    ProductId: pid,
+                    id: pid,
                     SellerId: req.sellerId
                 }
             })

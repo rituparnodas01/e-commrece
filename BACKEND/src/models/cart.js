@@ -11,7 +11,8 @@ module.exports = (DataTypes, sequelize) => {
         allowNull: false
       },
       UserId : DataTypes.INTEGER,
-      ProductId : DataTypes.INTEGER
+      // ProductId : DataTypes.INTEGER
+      id : DataTypes.INTEGER
     }, {
       // Other model options go here
       //   tableName: 'educations',

@@ -8,9 +8,9 @@ router.post('/signupseller', usrctrl.signupSeller);
 
 router.post('/loginseller', usrctrl.loginSeller);
 
-router.post('/addproducts', Token.Seller_Verification, uploads.single('Product_image'), usrctrl.addproducts);
+router.post('/addproducts', Token.Seller_Verification, uploads.single('image'), usrctrl.addproducts);
 
-router.post('/editproducts/:pid', Token.Seller_Verification, uploads.single('Product_image'), usrctrl.editproducts);
+router.post('/editproducts/:pid', Token.Seller_Verification, uploads.single('image'), usrctrl.editproducts);
 
 router.post('/deleteproducts/:pid', Token.Seller_Verification, usrctrl.deleteproducts);
 

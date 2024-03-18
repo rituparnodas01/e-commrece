@@ -3,33 +3,45 @@ const { INTEGER } = require("sequelize");
 module.exports = (DataTypes, sequelize) => {
     const Product = sequelize.define('product', {
       // Model attributes are defined here
-      ProductId: {
+      id: {
         type: DataTypes.INTEGER,
         primaryKey: true,
         autoIncrement: true
       },
-      Product_catagory: {
+      category: {
         type: DataTypes.STRING,
         allowNull: false
       },
-      Product_name: {
+      colors: {
         type: DataTypes.STRING,
         allowNull: false
       },
-      Product_description: {
+      company: {
+        type: DataTypes.STRING,
+        allowNull: false
+      },
+      featured: {
+        type: DataTypes.STRING,
+        allowNull: false
+      },
+      name: {
+        type: DataTypes.STRING,
+        allowNull: false
+      },
+      description: {
         type: DataTypes.STRING,
         allowNull: false,
         // unique: true
       },
-      Product_image: {
+      image: {
         type: DataTypes.STRING,
         allowNull: true
       },
-      Stock: {
+      stock: {
         type: DataTypes.INTEGER, 
         allowNull: false
       },
-      Price: {
+      price: {
         type: DataTypes.STRING, 
         allowNull: false
       },

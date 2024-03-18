@@ -27,14 +27,16 @@ db.seller = require("./seller")(DataTypes, sequelize, Model)
 
 db.product.belongsTo(db.seller, {foreignKey: 'SellerId'});
 db.cart.belongsTo(db.user, {foreignKey: 'UserId'});
-db.cart.belongsTo(db.product, {foreignKey: 'ProductId'});
+db.cart.belongsTo(db.product, {foreignKey: 'id'});
 db.order.belongsTo(db.user, {foreignKey: 'UserId'});
-db.order.belongsTo(db.product, {foreignKey: 'ProductId'});
+db.order.belongsTo(db.product, {foreignKey: 'id'});
 // db.order.belongsTo(db.cart, {foreignKey: 'CartId'});
 db.order.belongsTo(db.address, {foreignKey: 'AddressId'});
 db.address.belongsTo(db.user, {foreignKey: 'UserId'});
 
 // db.product.sync({ force: true });
+// db.order.sync({ force: true });
+// db.cart.sync({ force: true });
 
 db.sequelize.sync({ force: false });
 

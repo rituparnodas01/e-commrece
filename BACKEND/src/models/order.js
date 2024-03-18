@@ -16,7 +16,8 @@ module.exports = (DataTypes, sequelize) => {
       },
       UserId : DataTypes.INTEGER,
       AddressId: DataTypes.INTEGER,
-      ProductId: DataTypes.INTEGER,
+      // ProductId: DataTypes.INTEGER,
+      id: DataTypes.INTEGER,
     }, {
       // Other model options go here
       //   tableName: 'educations',
